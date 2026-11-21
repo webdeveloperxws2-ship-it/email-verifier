@@ -66,7 +66,7 @@ if st.button("🚀 Verify Emails"):
         
         # Show Results
         df_result = pd.DataFrame(results)
-        st.dataframe(df_result, use_container_width=True)
+        st.dataframe(df_result, width='stretch')
 
         # Export options
         csv_all = df_result.to_csv(index=False).encode("utf-8")

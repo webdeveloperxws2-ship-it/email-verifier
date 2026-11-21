@@ -9,8 +9,8 @@ from email_validator import validate_email, EmailNotValidError
 # Ye code system DNS ko ignore kar ke seedha Google/Cloudflare se poochega
 resolver = dns.resolver.Resolver(configure=False)
 resolver.nameservers = ['8.8.8.8', '1.1.1.1', '8.8.4.4']
-resolver.timeout = 5
-resolver.lifetime = 5
+resolver.timeout = 10
+resolver.lifetime = 10
 # ---------------------------
 
 def check_syntax(email):
