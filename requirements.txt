@@ -1,0 +1,6 @@
+streamlit
+pandas
+dnspython
+email-validator
+requests
+openpyxl
